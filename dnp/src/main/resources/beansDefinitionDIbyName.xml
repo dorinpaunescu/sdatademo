@@ -1,0 +1,15 @@
+<beans
+	xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans-3.1.xsd" default-autowire="byType">
+	
+	<bean id="userDao"
+		class="spring.demo.dnp.xml.beans.UserDao">
+	</bean>
+	
+	<bean id="userService" autowire="byName"
+		class="spring.demo.dnp.xml.beans.UserService">
+		
+	</bean>
+</beans>
